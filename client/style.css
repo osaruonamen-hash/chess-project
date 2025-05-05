@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: #0f1a1c;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.card {
+  background: #17232a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+button {
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat, .leaderboard, .history {
+  background: #17232a;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  margin: 10px;
+  width: 250px;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: auto;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  border-radius: 10px 0 0 10px;
+}
+
+.chat-input button {
+  border-radius: 0 10px 10px 0;
+}
+
+.chat-messages div {
+  background: #25d366;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.language-select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.chess-section {
+  background: #17232a;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.square.dark {
+  background-color: #b58863;
+}
+
+.square.highlight {
+  background-color: yellowgreen;
+}
