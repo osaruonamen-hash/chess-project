@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Chess</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Real-Time Chess</h1>
+    <div id="board"></div>
+    <div id="chat">
+      <textarea id="chatBox"></textarea>
+      <input id="chatInput" type="text" placeholder="Type a message...">
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
