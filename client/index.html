@@ -5,17 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Real-Time Chess</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Chessboard & Chess.js CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
+  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+
+  <!-- Socket.IO -->
+  <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
-  <div id="app">
-    <h1>Real-Time Chess</h1>
-    <div id="board"></div>
-    <div id="chat">
-      <text area id="chatBox"></text area>
-      <input id="chatInput" type="text" placeholder="Type a message...">
-    </div>
-  </div>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="game.js"></script>
+  <h1>Real-Time Chess</h1>
+
+  <!-- Chess Board -->
+  <div id="board" style="width: 400px; margin: 20px auto;"></div>
+
+  <!-- Chat input -->
+  <input type="text" id="messageInput" placeholder="Type a message..." />
+
+  <!-- Your custom JS -->
+  <script src="client/game.js"></script>
 </body>
 </html>
